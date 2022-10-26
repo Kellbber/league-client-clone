@@ -2,8 +2,8 @@ import styled, {css} from 'styled-components'
 
 export const background = styled.section`
 display: flex;
-align-items: center;
-justify-content: center;
+min-height: 100%;
+min-width: 100%;
 
 
 `
