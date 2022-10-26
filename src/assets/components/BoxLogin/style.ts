@@ -54,7 +54,7 @@ export const divInputUser = styled.div<Color>`
 ${({theme})=>css`
 width: 70%;
 background-color: ${(props):any=>{
-  if(props.clicked){
+  if(props.theme.clicked){
     return "whiteSmoke"
   }else{
     return colors.secundaryColor
@@ -62,7 +62,7 @@ background-color: ${(props):any=>{
 }};
 border-radius: .3rem;
 border: ${(props):any=>{
-  if(props.clicked){
+  if(props.theme.clicked){
     return `2px solid ${theme.colors.textColor}`
   }else{
     return "none"
@@ -97,7 +97,7 @@ export const divInputPass = styled.div<Color>`
 ${({theme})=>css`
 width: 70%;
 background-color: ${(props)=>{
-  if(props.clicked){
+  if(props.theme.clicked){
     return "whiteSmoke"
   }else{
     return colors.secundaryColor
@@ -106,7 +106,7 @@ background-color: ${(props)=>{
 }};
 border-radius: .3rem;
 border: ${(props):any=>{
-  if(props.clicked){
+  if(props.theme.clicked){
     return `2px solid ${theme.colors.textColor}`
   }else{
     return "none"
