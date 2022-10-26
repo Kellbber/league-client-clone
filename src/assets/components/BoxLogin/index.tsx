@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { StringDecoder } from 'string_decoder';
 import * as S from './style'
-
+import Checkbox from "../Checkbox";
 const BoxLogin = () => {
   const[colorUser,  setColorUser] = useState<boolean>(false);
   const[colorPass,  setColorPass] = useState<boolean>(false);
@@ -33,6 +33,7 @@ const BoxLogin = () => {
             <img/>
           </S.divApple>
         </S.divIcons>
+          <Checkbox />
 
 
     </S.background>

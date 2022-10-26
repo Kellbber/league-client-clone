@@ -223,10 +223,4 @@ img{
 }
 `}
 `
-export const divStay = styled.div`
-${({theme})=>css`
-display: flex;
-width: 70%;
-align-self: center;
-`}
-`
+
