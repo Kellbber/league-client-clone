@@ -53,22 +53,7 @@ export const SignIn = styled.p`
 export const divInputUser = styled.div<Color>`
 ${({theme})=>css`
 width: 70%;
-background-color: ${(props):any=>{
-  if(props.theme.clicked){
-    return "whiteSmoke"
-  }else{
-    return colors.secundaryColor
-  }
-}};
-border-radius: .3rem;
-border: ${(props):any=>{
-  if(props.theme.clicked){
-    return `2px solid ${theme.colors.textColor}`
-  }else{
-    return "none"
-  }
 
-}};
 align-self: center;
 margin: .5rem 0 .5rem 0;
 p{
@@ -91,28 +76,27 @@ input{
 }
 
 `}
-
-`
-export const divInputPass = styled.div<Color>`
-${({theme})=>css`
-width: 70%;
-background-color: ${(props)=>{
-  if(props.theme.clicked){
+background-color: ${(props):any=>{
+  if(props.clicked){
     return "whiteSmoke"
   }else{
     return colors.secundaryColor
   }
-
 }};
 border-radius: .3rem;
 border: ${(props):any=>{
-  if(props.theme.clicked){
-    return `2px solid ${theme.colors.textColor}`
+  if(props.clicked){
+    return `2px solid rgba(0,0,0,0.8)}`
   }else{
     return "none"
   }
 
 }};
+`
+export const divInputPass = styled.div<Color>`
+${({theme})=>css`
+width: 70%;
+
 align-self: center;
 margin: .5rem 0 .5rem 0;
 p{
@@ -134,6 +118,23 @@ input{
 }
 
 `}
+background-color: ${(props)=>{
+  if(props.clicked){
+    return "whiteSmoke"
+  }else{
+    return colors.secundaryColor
+  }
+
+}};
+border-radius: .3rem;
+border: ${(props):any=>{
+  if(props.clicked){
+    return `2px solid rgba(0,0,0,0.8)`
+  }else{
+    return "none"
+  }
+
+}};
 
 `
 export const divIcons = styled.div`
