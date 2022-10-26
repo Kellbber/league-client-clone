@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import { StringDecoder } from 'string_decoder';
+import {AiOutlineArrowRight} from 'react-icons/ai';
+
 import * as S from './style'
 import Checkbox from "../Checkbox";
+import ButtonSubmit from '../ButtonSubmit';
 const BoxLogin = () => {
   const[colorUser,  setColorUser] = useState<boolean>(false);
   const[colorPass,  setColorPass] = useState<boolean>(false);
@@ -34,8 +36,16 @@ const BoxLogin = () => {
           </S.divApple>
         </S.divIcons>
           <Checkbox />
-
-
+        <ButtonSubmit><AiOutlineArrowRight color='white' size={25}/></ButtonSubmit>
+        <S.divText>
+          <p>CAN`T SIGN UP</p>
+          <p>CREATE ACCOUNT</p>
+        </S.divText>
+        <S.divVersion>
+          <p>
+            V60.0.3
+          </p>
+        </S.divVersion>
     </S.background>
   )
 }

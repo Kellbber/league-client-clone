@@ -13,9 +13,9 @@ export const background = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-    min-width: 33%;
-    min-height: 100%;
-    background-color: yellow;
+    min-width: 30%;
+    min-height: 100vh;
+    background-color: whitesmoke;
   `}
 `;
 
@@ -55,7 +55,7 @@ ${({theme})=>css`
 width: 70%;
 background-color: ${(props):any=>{
   if(props.clicked){
-    return colors.primaryColor
+    return "whiteSmoke"
   }else{
     return colors.secundaryColor
   }
@@ -98,7 +98,7 @@ ${({theme})=>css`
 width: 70%;
 background-color: ${(props)=>{
   if(props.clicked){
-    return colors.primaryColor
+    return "whiteSmoke"
   }else{
     return colors.secundaryColor
   }
@@ -224,3 +224,43 @@ img{
 `}
 `
 
+export const divText = styled.div`
+${({theme})=>css`
+
+display: flex;
+align-items: center;
+justify-content: center;
+width: 70%;
+flex-direction: column;
+align-self: center;
+p{
+  font-family: ${theme.constants.inputFontFamily};
+  font-size: .6rem;
+  font-weight: 800;
+  cursor: pointer;
+  color: ${theme.colors.secundaryColor};
+}
+p:hover{
+  color: ${theme.colors.textColor};
+}
+`}
+`
+export const divVersion = styled.div`
+${({theme})=>css`
+display: flex;
+width: 80%;
+align-self: center;
+justify-content: flex-end;
+align-items: flex-end;
+p{
+  font-family: ${theme.constants.inputFontFamily};
+  font-size: .6rem;
+  font-weight: 800;
+  cursor: pointer;
+  color: ${theme.colors.secundaryColor};
+}
+p:hover{
+  color: ${theme.colors.textColor};
+}
+`}
+`
