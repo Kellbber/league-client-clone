@@ -1,8 +1,8 @@
 export const constants = {
 
   headingFontFamily: "Montserrat",
-  headingFontSize: "20px",
-  headingLineHeight: "140%",
+  headingFontSize: "16px",
+  headingLineHeight: 600,
 
   inputFontFamily: "Lexend Deca",
   inputFontSize: "10px",
